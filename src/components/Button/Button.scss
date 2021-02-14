@@ -1,0 +1,31 @@
+.btn {
+  padding: 10px;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+
+  & svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--gray {
+    background-color: #ddd;
+  }
+
+  &--light-coral {
+    background-color: #ffcaba;
+  }
+
+  &--coral {
+    background-color: coral;
+  }
+
+
+
+}

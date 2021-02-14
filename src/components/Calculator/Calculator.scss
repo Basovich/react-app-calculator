@@ -1,0 +1,52 @@
+.calculator {
+  width: 300px;
+  background-color: #333;
+  border-radius: 12px;
+  overflow: hidden;
+
+  &-display {
+    min-height: 95px;
+    font-size: 28px;
+    line-height: 1.5;
+    color: white;
+    padding: 10px 20px;
+    white-space: nowrap;
+    overflow: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: #666 #999;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #999;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #666;
+    }
+  }
+
+  &-equation {
+    text-align: right;
+  }
+
+  &-result {
+    text-align: right;
+    opacity: .7;
+    font-size: 22px;
+  }
+
+  &-buttons-grid {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+  }
+
+}
+
+
